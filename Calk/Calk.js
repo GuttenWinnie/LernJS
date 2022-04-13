@@ -1,4 +1,4 @@
-var op; 
+var op;
 
   function func() {
     var result;
@@ -9,6 +9,7 @@ var op;
     switch (op) {
       case '+':
         result = num1 + num2;
+          document.getElementById('plus').style.borderColor = 'red';
         break;
       case '-':
         result = num1 - num2;
