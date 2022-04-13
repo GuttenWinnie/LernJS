@@ -1,26 +1,18 @@
-var op;
+const calc = document.querySelector('.button');
+const result = document.querySelector('#screen');
 
-  function func() {
-    var result;
+calc.addEventListener('click', function(event) {
 
-    var num1 = Number(document.getElementById("num1").value);
-    var num2 = Number(document.getElementById("num2").value);
+  let value = event.target.innerText;
 
-    switch (op) {
-      case '+':
-        result = num1 + num2;
-          document.getElementById('plus').style.borderColor = 'red';
-        break;
-      case '-':
-        result = num1 - num2;
-        break;
-      case '*':
-        result = num1 * num2;
-        break;
-      case '/':
-        result = num1 / num2;
-        break;
-    }
+  switch(value) {
 
-    document.getElementById("result").innerHTML = result;
-}
+    case '=':   
+      
+      result.innerText = eval(result.innerText).toFixed(2);
+      break;    
+
+    default:
+      result.innerText += value;
+  }
+});

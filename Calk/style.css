@@ -1,25 +1,41 @@
 body{
     display: grid;
-    background-color: grey;
     justify-content: center;
 }
 .conteiner{
     display: grid;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#screen{
+    display: grid;
+    justify-content: end;
+    align-content: flex-end;
+    height: 100px;
+    font-size: 50px;
+    color: antiquewhite;
+    padding-right: 20px;
 }
 .button{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "one two three plus";
+    grid-template-areas: "four five six minus";
+    grid-template-areas: "seven eight nine times";
+    grid-template-areas: "zero  zero  calk divide";
     padding: 0px;
     margin: 0px;
     justify-items: center;
 }
 .but{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
+    border-color: gray;
+    background-color: gray;
     font-size: 30px;
 }
-.num{
+#num{
     text-align: center;
     padding: 12px;
     border-style: solid;
@@ -29,6 +45,7 @@ body{
     font-size: 20px;
     font-weight: 100;
     cursor: pointer;
+    height: 90px;
 }
 .calk{
     font-size: 20px;
@@ -50,3 +67,19 @@ body{
 button:active {
     border-color: red;
    }
+
+.arethmeticks{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: yellowgreen;
+}
+.calk{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-color: gray;
+    background-color: gray;
+    font-size: 30px;
+}
