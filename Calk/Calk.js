@@ -9,7 +9,7 @@ calc.addEventListener('click', function(event) {
 
     case '=':   
       
-      result.innerText = eval(result.innerText).toFixed(2);
+      result.innerText = eval(result.innerText).toFixed(0);
       break;    
 
     default:
